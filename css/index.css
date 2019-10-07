@@ -1,3 +1,220 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
 
+html, body {
+  height: 100%;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+.top {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 1%;
+}
+.logo-top {
+    width: 80%; 
+    display: none;
+}
+nav a {
+    margin: 30px;
+	font-size: 15px;
+	text-decoration: none;
+	color:grey;
+}
+.image-header{
+	margin-left: 200px;
+}
+#innovation {
+	font-size: 70px;
+	width: 10px;
+	text-transform: uppercase;
+	font-family: 'Bangers', cursive;
+}
+.button{
+	border: 1px solid black;
+	padding: 10px 35px 10px 35px;
+	width: 160px;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+}
+#features {
+	width: 40%;
+}
+#about {
+	width: 40%;
+}
+.container {
+	display: flex;
+	justify-content:center;
+}
+.container-header {
+    display: flex;
+	justify-content:center;
+}
+.middle-img {
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+#services {
+	margin-bottom: 5%;
+	width: 30%;
+}
+#product {
+	width: 30%;
+	margin-bottom: 5%;
+}
+#vision {
+	width: 30%;
+	margin-bottom: 5%;
+}
+hr { 
+  margin: 0 auto;  
+  border-style: inset;
+  border-width: 1px;
+} 
+#contact{
+	margin-top: 50px;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+}
+footer{
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+@media (max-width: 800px) {
+    .logo-right {
+        display: none; 
+    }
+    .image-header {
+        display: none;
+    }
+    .logo-top {
+        display: flex;
+        justify-content: center;
+        margin: 5%;
+    }
+    .container-header {
+        display: flex;
+	    flex-direction: column;
+    }
+    .middle-img {
+        width: 80%;
+    }
+}
+@media (max-width: 500px) {
+    .logo-right {
+        display: none; 
+    }
+    .image-header {
+        display: none;
+    }
+    .logo-top {
+        display: flex;
+        justify-content: center;
+        margin: 5%;
+        border-bottom: 1px solid grey;
+    }
+    .container-header {
+        display: flex;
+	    flex-direction: column;
+    }
+    .middle-img {
+        width: 80%;
+    }
+    .links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin: 1%;
+    }
+    .links a {
+        border-bottom: 1px solid grey;
+    }
+    .container {
+       display: flex;
+	   flex-direction: column;
+    }
+
+    #features {
+	    width: 80%;
+    }
+    #about {
+	    width: 80%;
+    }
+    #services {
+	    width: 80%;
+    }
+    #product {
+	    width: 80%;
+    }
+    #vision {
+	    width: 80%;
+    }
+    #innovation {
+	   font-size: 70px;
+	   width: 10px;
+	   text-transform: uppercase;
+       font-family: 'Bangers', cursive;
+       margin-left: 25%;
+    } 
+
+    .button{
+	   border: 1px solid black;
+	   padding: 10px 35px 10px 35px;
+	   width: 160px;
+	   text-align: center;
+	   margin-top: 20px;
+	   margin-bottom: 20px;
+       margin-left: 20px;
+       margin-left: 25%;
+   }
+}
